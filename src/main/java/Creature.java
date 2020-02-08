@@ -16,6 +16,7 @@ public class Creature {
         if (hp <= 0) {
             boolean alive = false;
         }
+        System.out.println("Received " + dmg + " dmg points!");
     }
 
     public int getHp() {

@@ -12,8 +12,8 @@ public class Goblin extends Monster {
     }
 
     @Override
-    public double attack() {
-        return strength + weaponType.getDamage() + getGoblinAttack();
+    public int attack() {
+        return (int) (strength + weaponType.getDamage() + getGoblinAttack());
 
     }
 

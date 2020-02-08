@@ -1,22 +1,31 @@
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) {
-
-        System.out.println(" Welcome Witch in the Land Of Monsters! \n Choose <NEW GAME> or <LOAD GAME>");
+        System.out.println("Dungeon master says \n - Hello Witch!, We were expecting You... ");
         Player player = PlayerCreator.createPlayer();
-        System.out.println(player);
         List<Monster> monsters = MonsterCreationUtil.createMonsters();
 
-       
-        monsters.stream().filter(n->n.isAlive()).forEach(singleMonster ->player.receiveDamage(singleMonster.attack());
+        while (player.isAlive() && monsters.stream().anyMatch(m -> m.isAlive())) {
 
-        System.out.println();
+            monsters.stream()
+                    .filter(m -> m.isAlive())
+                    .findFirst()
+                    .get()
+                    .receiveDamage(player.attack());
 
 
+            monsters.stream().filter(m -> m.isAlive())
+                    .forEach(singleMonster -> player.receiveDamage(singleMonster.attack()));
+            System.out.println(monsters);
+        }
+        if (player.isAlive()) {
+            System.out.println("Congratulations Dear Witch! You have killed " + monsters);
+        } else {
+            System.out.println("Condolence Dear Witch, You are dead. ");
 
-
-
-    }
-
+        }
+     }
 }

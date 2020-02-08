@@ -6,7 +6,7 @@ public class Player extends Creature implements AbleToAttack {
     }
 
     @Override
-    public double attack() {
+    public int attack() {
         return strength + weaponType.getDamage() + 1;
 
     }

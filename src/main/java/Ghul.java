@@ -9,8 +9,8 @@ public class Ghul extends Monster {
     }
 
     @Override
-    public double attack() {
-        return strength + weaponType.getDamage() + getGhulAttack();
+    public int attack() {
+        return (int) (strength + weaponType.getDamage() + getGhulAttack());
 
     }
 
