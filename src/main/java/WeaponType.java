@@ -1,6 +1,6 @@
 public enum WeaponType {
 
-    SWORD(10), MACE(6), UNARMED(0);
+    SWORD(10), MACE(6), UNARMED(2);
 
     private final int damage;
 

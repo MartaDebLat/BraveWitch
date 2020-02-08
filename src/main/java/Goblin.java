@@ -1,10 +1,8 @@
 public class Goblin extends Monster {
 
     public Goblin (){
-        hp = 25;
-        strength = 2;
-        weaponType = WeaponType.MACE;
-        alive = true;
+        super(50, 8, true, WeaponType.MACE);
+
 
     }
 
