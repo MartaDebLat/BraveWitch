@@ -1,6 +1,4 @@
-public class Monster implements AbleToAttack {
-    @Override
-    public Integer attack() {
-        return null;
+public abstract class Monster extends Creature implements AbleToAttack {
+
     }
-}
+

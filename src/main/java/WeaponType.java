@@ -5,10 +5,12 @@ public enum WeaponType {
     private final int damage;
 
     WeaponType(int damage) {
+
         this.damage = damage;
     }
 
     public int getDamage() {
+
         return damage;
     }
 }
