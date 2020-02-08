@@ -1,5 +1,5 @@
 public interface AbleToAttack {
 
-Integer attack();
+double attack();
 
 }

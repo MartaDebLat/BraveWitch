@@ -13,4 +13,6 @@ public enum WeaponType {
 
         return damage;
     }
+
 }
+

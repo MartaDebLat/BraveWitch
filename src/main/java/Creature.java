@@ -11,6 +11,13 @@ public class Creature {
         this.weaponType = weaponType;
     }
 
+    public void receiveDamage(int dmg) {
+        hp = hp - dmg;
+        if (hp <= 0) {
+            boolean alive = false;
+        }
+    }
+
     public int getHp() {
         return hp;
     }
