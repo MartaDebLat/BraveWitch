@@ -1,3 +1,5 @@
+package org.example.bravewitch;
+
 public enum WeaponType {
 
     SWORD(10), MACE(6), UNARMED(2);

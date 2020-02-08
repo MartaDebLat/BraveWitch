@@ -1,3 +1,5 @@
+package org.example.bravewitch;
+
 public class Creature {
 
     int hp, strength;

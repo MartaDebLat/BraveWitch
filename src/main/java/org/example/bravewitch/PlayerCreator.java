@@ -1,3 +1,5 @@
+package org.example.bravewitch;
+
 import java.util.Scanner;
 
 public class PlayerCreator {

@@ -1,3 +1,5 @@
+package org.example.bravewitch;
+
 import java.util.Random;
 
 public class Goblin extends Monster {

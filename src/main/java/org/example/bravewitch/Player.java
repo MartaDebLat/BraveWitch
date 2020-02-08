@@ -1,3 +1,5 @@
+package org.example.bravewitch;
+
 public class Player extends Creature implements AbleToAttack {
 
     public Player(WeaponType playerWeapon) {
