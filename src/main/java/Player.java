@@ -1,7 +1,7 @@
 public class Player extends Creature implements AbleToAttack {
 
     public Player(WeaponType playerWeapon) {
-        super(120, 25, true, playerWeapon);
+        super(80, 25, true, playerWeapon);
 
     }
 

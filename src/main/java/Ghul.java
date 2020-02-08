@@ -4,7 +4,7 @@ public class Ghul extends Monster {
     public Ghul() {
         super(70, 12, true, WeaponType.UNARMED);
 
-        double ghulAttack = new Random().nextDouble();
+        double ghulAttack = new Random().nextInt(2);
 
     }
 
